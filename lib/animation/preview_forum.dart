@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class CardPreview extends StatefulWidget {
   const CardPreview({Key? key}) : super(key: key);
@@ -12,6 +13,8 @@ double? width;
 double? height;
 bool? animate;
 bool? cardText;
+
+String urlForum = "https://github.com/Capstone-15-Alta/Flutter-mobile";
 
 class _CardPreviewState extends State<CardPreview> {
   @override
@@ -84,7 +87,9 @@ class _CardPreviewState extends State<CardPreview> {
             ),
             Align(
               child: GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  _launchURL(urlForum);
+                },
                 child: SizedBox(
                   width: 400,
                   height: 250,
@@ -116,5 +121,11 @@ class _CardPreviewState extends State<CardPreview> {
         ),
       ),
     );
+  }
+}
+
+Future<void> _launchURL(String urlForum) async {
+  if (!await launchUrl(Uri.parse(urlForum))) {
+    throw 'Could not launch $urlForum';
   }
 }

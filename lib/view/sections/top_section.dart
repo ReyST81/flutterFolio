@@ -58,8 +58,8 @@ Container _desktopBody({
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             SizedBox(
-              height: 300,
-              width: 300,
+              height: 400,
+              width: 400,
               child: CircleAvatar(
                 backgroundColor: Colors.white,
                 child: Image.asset(

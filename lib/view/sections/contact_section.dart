@@ -40,71 +40,77 @@ class ContactSection extends StatelessWidget {
                 spacing: 40,
                 runSpacing: 40,
                 children: [
-                  Container(
-                    width: 300,
-                    height: 300,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(12),
-                        color: Colors.white,
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.black.withOpacity(0.5),
-                            spreadRadius: 5,
-                            blurRadius: 7,
-                            offset: const Offset(0, 3),
+                  GestureDetector(
+                    onTap: () {},
+                    child: Container(
+                      width: 300,
+                      height: 300,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(12),
+                          color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.black.withOpacity(0.5),
+                              spreadRadius: 5,
+                              blurRadius: 7,
+                              offset: const Offset(0, 3),
+                            )
+                          ]),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          const FaIcon(
+                            FontAwesomeIcons.phone,
+                            color: Colors.black,
+                            size: 50,
+                          ),
+                          const SizedBox(height: 20),
+                          Text(
+                            "WhatsApp or Phone Number",
+                            style: GoogleFonts.poppins(
+                                fontSize: 15, fontWeight: FontWeight.w400),
+                          ),
+                          Text(
+                            "081378850755",
+                            style: GoogleFonts.poppins(
+                                fontSize: 15, fontWeight: FontWeight.w400),
                           )
-                        ]),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        const FaIcon(
-                          FontAwesomeIcons.phone,
-                          color: Colors.black,
-                          size: 50,
-                        ),
-                        const SizedBox(height: 20),
-                        Text(
-                          "WhatsApp or Phone Number",
-                          style: GoogleFonts.poppins(
-                              fontSize: 15, fontWeight: FontWeight.w400),
-                        ),
-                        Text(
-                          "081378850755",
-                          style: GoogleFonts.poppins(
-                              fontSize: 15, fontWeight: FontWeight.w400),
-                        )
-                      ],
+                        ],
+                      ),
                     ),
                   ),
-                  Container(
-                    width: 300,
-                    height: 300,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(12),
-                        color: Colors.white,
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.black.withOpacity(0.5),
-                            spreadRadius: 5,
-                            blurRadius: 7,
-                            offset: const Offset(0, 3),
+                  GestureDetector(
+                    onTap: () {},
+                    child: Container(
+                      width: 300,
+                      height: 300,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(12),
+                          color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.black.withOpacity(0.5),
+                              spreadRadius: 5,
+                              blurRadius: 7,
+                              offset: const Offset(0, 3),
+                            )
+                          ]),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Image.asset(
+                            "assets/image/gmail.png",
+                          ),
+                          const SizedBox(height: 30),
+                          Text(
+                            "Reyhanseptri@gmail.com",
+                            style: GoogleFonts.poppins(
+                                fontSize: 15, fontWeight: FontWeight.w400),
                           )
-                        ]),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Image.asset(
-                          "assets/image/gmail.png",
-                        ),
-                        const SizedBox(height: 30),
-                        Text(
-                          "Reyhanseptri@gmail.com",
-                          style: GoogleFonts.poppins(
-                              fontSize: 15, fontWeight: FontWeight.w400),
-                        )
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                 ],

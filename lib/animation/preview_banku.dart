@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class BankuPreview extends StatefulWidget {
   const BankuPreview({Key? key}) : super(key: key);
@@ -7,6 +8,8 @@ class BankuPreview extends StatefulWidget {
   @override
   State<BankuPreview> createState() => _BankuPreviewState();
 }
+
+String urlBanku = "https://github.com/ReyST81/Banku-NovelApp";
 
 double? width;
 double? height;
@@ -84,7 +87,9 @@ class _BankuPreviewState extends State<BankuPreview> {
             ),
             Align(
               child: GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  _launchURL(urlBanku);
+                },
                 child: SizedBox(
                   width: 400,
                   height: 250,
@@ -116,5 +121,11 @@ class _BankuPreviewState extends State<BankuPreview> {
         ),
       ),
     );
+  }
+}
+
+Future<void> _launchURL(String urlBanku) async {
+  if (!await launchUrl(Uri.parse(urlBanku))) {
+    throw 'Could not launch $urlBanku';
   }
 }
