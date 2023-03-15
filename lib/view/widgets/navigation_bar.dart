@@ -8,19 +8,20 @@ class Navbar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: const BoxDecoration(
-        color: Color(0xff424346),
+        color: Colors.white,
       ),
       child: Padding(
-          padding: const EdgeInsets.only(left: 30, right: 30, top: 20),
+          padding:
+              const EdgeInsets.only(left: 20, right: 20, top: 10, bottom: 10),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
                 "</S3P>",
-                style: GoogleFonts.oswald(
+                style: GoogleFonts.hurricane(
                     fontSize: 30,
                     fontWeight: FontWeight.bold,
-                    color: Colors.white),
+                    color: Colors.black),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -30,47 +31,39 @@ class Navbar extends StatelessWidget {
                     style: GoogleFonts.poppins(
                         fontSize: 15,
                         fontWeight: FontWeight.w400,
-                        color: Colors.white),
+                        color: Colors.black),
                   ),
-                  const SizedBox(
-                    width: 20,
-                  ),
+                  SizedBox(width: MediaQuery.of(context).size.width * 0.03),
                   Text(
                     "About",
                     style: GoogleFonts.poppins(
                         fontSize: 15,
                         fontWeight: FontWeight.w400,
-                        color: Colors.white),
+                        color: Colors.black),
                   ),
-                  const SizedBox(
-                    width: 20,
-                  ),
+                  SizedBox(width: MediaQuery.of(context).size.width * 0.03),
                   Text(
                     "Project",
                     style: GoogleFonts.poppins(
                         fontSize: 15,
                         fontWeight: FontWeight.w400,
-                        color: Colors.white),
+                        color: Colors.black),
                   ),
-                  const SizedBox(
-                    width: 20,
-                  ),
+                  SizedBox(width: MediaQuery.of(context).size.width * 0.03),
                   Text(
                     "Interest",
                     style: GoogleFonts.poppins(
                         fontSize: 15,
                         fontWeight: FontWeight.w400,
-                        color: Colors.white),
+                        color: Colors.black),
                   ),
-                  const SizedBox(
-                    width: 20,
-                  ),
+                  SizedBox(width: MediaQuery.of(context).size.width * 0.03),
                   Text(
                     "Contact",
                     style: GoogleFonts.poppins(
                         fontSize: 15,
                         fontWeight: FontWeight.w400,
-                        color: Colors.white),
+                        color: Colors.black),
                   ),
                 ],
               ),

@@ -21,7 +21,6 @@ class _BankuPreviewState extends State<BankuPreview> {
   void initState() {
     animate = false;
     cardText = false;
-    // TODO: implement initState
     super.initState();
   }
 

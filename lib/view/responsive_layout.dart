@@ -29,7 +29,7 @@ class Responsivelayout extends StatelessWidget {
     final Size size = MediaQuery.of(context).size;
     if (size.width >= 1024) {
       return desktop;
-    } else if (size.width >= 700) {
+    } else if (size.width >= 800) {
       return tablet;
     } else {
       return mobile;
