@@ -1,4 +1,3 @@
-import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_portofolio/view/responsive_layout.dart';
@@ -25,9 +24,8 @@ _desktopBody({
 }) {
   return Container(
     decoration: const BoxDecoration(
-      color: Color(0xff2d2f33),
+      color: Color(0xffC3E5FF),
     ),
-    width: widthBody,
     child: Padding(
       padding: EdgeInsets.only(
           left: widthBody * 0.09,
@@ -54,7 +52,7 @@ _desktopBody({
                   style: GoogleFonts.poppins(
                       fontWeight: FontWeight.w400,
                       fontSize: 35,
-                      color: Colors.white),
+                      color: Colors.black),
                 ),
                 const SizedBox(
                   height: 15,
@@ -62,9 +60,9 @@ _desktopBody({
                 Text(
                   "Who am i?",
                   style: GoogleFonts.poppins(
-                      fontWeight: FontWeight.w300,
-                      fontSize: 15,
-                      color: const Color(0xfffec536)),
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16,
+                      color: const Color(0xff00285d)),
                 ),
                 const SizedBox(
                   height: 17,
@@ -75,7 +73,7 @@ _desktopBody({
                   style: GoogleFonts.notoSans(
                       fontWeight: FontWeight.w400,
                       fontSize: 19,
-                      color: Colors.white),
+                      color: Colors.black),
                 ),
                 const SizedBox(height: 14),
                 Text(
@@ -84,7 +82,7 @@ _desktopBody({
                   style: GoogleFonts.poppins(
                       fontWeight: FontWeight.w300,
                       fontSize: 14,
-                      color: Colors.white),
+                      color: Colors.black),
                 ),
                 const SizedBox(
                   height: 17,
@@ -92,15 +90,15 @@ _desktopBody({
                 Text(
                   "i seek challenging opportunities where i can fully  use my skills for success.",
                   style: GoogleFonts.poppins(
-                      fontWeight: FontWeight.w400,
+                      fontWeight: FontWeight.bold,
                       fontSize: 14,
-                      color: const Color(0xfffec536)),
+                      color: const Color(0xff00285d)),
                 ),
                 const SizedBox(
                   height: 14,
                 ),
                 const Divider(
-                  color: Colors.white,
+                  color: Colors.black,
                 ),
                 const SizedBox(
                   height: 15,
@@ -113,23 +111,23 @@ _desktopBody({
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "Name : Reyhan Septri Asta",
+                          "Languages : Dart, PHP, Html, Python, C++.",
                           textAlign: TextAlign.justify,
                           style: GoogleFonts.notoSans(
                               fontWeight: FontWeight.w300,
                               fontSize: 15,
-                              color: Colors.white),
+                              color: Colors.black),
                         ),
                         const SizedBox(
                           height: 12,
                         ),
                         Text(
-                          "Age : 21",
+                          "Framework : Flutter, Laravel, Bootstrap",
                           textAlign: TextAlign.justify,
                           style: GoogleFonts.notoSans(
                               fontWeight: FontWeight.w300,
                               fontSize: 15,
-                              color: Colors.white),
+                              color: Colors.black),
                         ),
                       ],
                     ),
@@ -137,23 +135,23 @@ _desktopBody({
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "Email : reyhanseptri@gmail.com",
+                          "Design : Figma, Canva",
                           textAlign: TextAlign.justify,
                           style: GoogleFonts.notoSans(
                               fontWeight: FontWeight.w300,
                               fontSize: 15,
-                              color: Colors.white),
+                              color: Colors.black),
                         ),
                         const SizedBox(
                           height: 12,
                         ),
                         Text(
-                          "From : Bandung, Telkom University",
+                          "Soft Skill : Teamwork , Time Management, Critikal Thinking, Creative, Discipline",
                           textAlign: TextAlign.justify,
                           style: GoogleFonts.notoSans(
                               fontWeight: FontWeight.w300,
                               fontSize: 15,
-                              color: Colors.white),
+                              color: Colors.black),
                         ),
                       ],
                     ),
@@ -174,7 +172,7 @@ _tabletBody({
 }) {
   return Container(
     decoration: const BoxDecoration(
-      color: Color(0xff2d2f33),
+      color: Color(0xffC3E5FF),
     ),
     width: widthBody,
     child: Padding(
@@ -203,7 +201,7 @@ _tabletBody({
                   style: GoogleFonts.poppins(
                       fontWeight: FontWeight.w400,
                       fontSize: 35,
-                      color: Colors.white),
+                      color: Colors.black),
                 ),
                 const SizedBox(
                   height: 15,
@@ -211,9 +209,9 @@ _tabletBody({
                 Text(
                   "Who am i?",
                   style: GoogleFonts.poppins(
-                      fontWeight: FontWeight.w300,
-                      fontSize: 15,
-                      color: const Color(0xfffec536)),
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16,
+                      color: const Color(0xff00285d)),
                 ),
                 const SizedBox(
                   height: 17,
@@ -224,7 +222,7 @@ _tabletBody({
                   style: GoogleFonts.notoSans(
                       fontWeight: FontWeight.w400,
                       fontSize: 19,
-                      color: Colors.white),
+                      color: Colors.black),
                 ),
                 const SizedBox(height: 14),
                 Text(
@@ -233,7 +231,7 @@ _tabletBody({
                   style: GoogleFonts.poppins(
                       fontWeight: FontWeight.w300,
                       fontSize: 14,
-                      color: Colors.white),
+                      color: Colors.black),
                 ),
                 const SizedBox(
                   height: 17,
@@ -241,15 +239,15 @@ _tabletBody({
                 Text(
                   "i seek challenging opportunities where i can fully  use my skills for success.",
                   style: GoogleFonts.poppins(
-                      fontWeight: FontWeight.w400,
+                      fontWeight: FontWeight.bold,
                       fontSize: 14,
-                      color: const Color(0xfffec536)),
+                      color: const Color(0xff00285d)),
                 ),
                 const SizedBox(
                   height: 14,
                 ),
                 const Divider(
-                  color: Colors.white,
+                  color: Colors.black,
                 ),
                 const SizedBox(
                   height: 15,
@@ -262,23 +260,23 @@ _tabletBody({
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "Name : Reyhan Septri Asta",
+                          "Languages : Dart, PHP, Html, Python, C++.",
                           textAlign: TextAlign.justify,
                           style: GoogleFonts.notoSans(
                               fontWeight: FontWeight.w300,
                               fontSize: 15,
-                              color: Colors.white),
+                              color: Colors.black),
                         ),
                         const SizedBox(
                           height: 12,
                         ),
                         Text(
-                          "Age : 21",
+                          "Framework : Flutter, Laravel, Bootstrap",
                           textAlign: TextAlign.justify,
                           style: GoogleFonts.notoSans(
                               fontWeight: FontWeight.w300,
                               fontSize: 15,
-                              color: Colors.white),
+                              color: Colors.black),
                         ),
                       ],
                     ),
@@ -286,23 +284,23 @@ _tabletBody({
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "Email : reyhanseptri@gmail.com",
+                          "Design : Figma, Canva",
                           textAlign: TextAlign.justify,
                           style: GoogleFonts.notoSans(
                               fontWeight: FontWeight.w300,
                               fontSize: 15,
-                              color: Colors.white),
+                              color: Colors.black),
                         ),
                         const SizedBox(
                           height: 12,
                         ),
                         Text(
-                          "From : Bandung, Telkom University",
+                          "Soft Skill : Teamwork , Time Management, Critikal Thinking, Creative, Discipline",
                           textAlign: TextAlign.justify,
                           style: GoogleFonts.notoSans(
                               fontWeight: FontWeight.w300,
                               fontSize: 15,
-                              color: Colors.white),
+                              color: Colors.black),
                         ),
                       ],
                     ),
@@ -328,7 +326,7 @@ _mobileBody({
           Container(
             width: widthBody,
             decoration: const BoxDecoration(
-              color: Color(0xff2d2f33),
+              color: Color(0xffC3E5FF),
             ),
             child: Padding(
               padding:
@@ -351,7 +349,7 @@ _mobileBody({
                       const SizedBox(
                         height: 10,
                       ),
-                      Container(
+                      SizedBox(
                         width: 500,
                         child: Expanded(
                           child: Column(
@@ -363,7 +361,7 @@ _mobileBody({
                                 style: GoogleFonts.poppins(
                                     fontWeight: FontWeight.w400,
                                     fontSize: 35,
-                                    color: Colors.white),
+                                    color: Colors.black),
                               ),
                               const SizedBox(
                                 height: 15,
@@ -371,9 +369,9 @@ _mobileBody({
                               Text(
                                 "Who am i?",
                                 style: GoogleFonts.poppins(
-                                    fontWeight: FontWeight.w300,
+                                    fontWeight: FontWeight.bold,
                                     fontSize: 15,
-                                    color: Color(0xfffec536)),
+                                    color: const Color(0xff00285d)),
                               ),
                               const SizedBox(
                                 height: 17,
@@ -384,7 +382,7 @@ _mobileBody({
                                 style: GoogleFonts.notoSans(
                                     fontWeight: FontWeight.w400,
                                     fontSize: 14,
-                                    color: Colors.white),
+                                    color: Colors.black),
                               ),
                               const SizedBox(height: 14),
                               Text(
@@ -393,7 +391,7 @@ _mobileBody({
                                 style: GoogleFonts.poppins(
                                     fontWeight: FontWeight.w300,
                                     fontSize: 14,
-                                    color: Colors.white),
+                                    color: Colors.black),
                               ),
                               const SizedBox(
                                 height: 17,
@@ -401,45 +399,45 @@ _mobileBody({
                               Text(
                                 "i seek challenging opportunities where i can fully  use my skills for success.",
                                 style: GoogleFonts.poppins(
-                                    fontWeight: FontWeight.w400,
+                                    fontWeight: FontWeight.bold,
                                     fontSize: 14,
-                                    color: Color(0xfffec536)),
+                                    color: const Color(0xff00285d)),
                               ),
                               const SizedBox(
                                 height: 14,
                               ),
                               const Divider(
-                                color: Colors.white,
+                                color: Colors.black,
                               ),
                               const SizedBox(
                                 height: 15,
                               ),
-                              Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
+                              Wrap(
+                                spacing: 300,
+                                runSpacing: 12,
                                 children: [
                                   Column(
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
                                     children: [
                                       Text(
-                                        "Name : Reyhan Septri Asta",
+                                        "Languages : Dart, PHP, Html, Python, C++.",
                                         textAlign: TextAlign.justify,
                                         style: GoogleFonts.notoSans(
                                             fontWeight: FontWeight.w300,
                                             fontSize: 15,
-                                            color: Colors.white),
+                                            color: Colors.black),
                                       ),
                                       const SizedBox(
-                                        height: 10,
+                                        height: 12,
                                       ),
                                       Text(
-                                        "Age : 21",
+                                        "Framework : Flutter, Laravel, Bootstrap",
                                         textAlign: TextAlign.justify,
                                         style: GoogleFonts.notoSans(
                                             fontWeight: FontWeight.w300,
                                             fontSize: 15,
-                                            color: Colors.white),
+                                            color: Colors.black),
                                       ),
                                     ],
                                   ),
@@ -448,26 +446,23 @@ _mobileBody({
                                         CrossAxisAlignment.start,
                                     children: [
                                       Text(
-                                        "Email : reyhanseptri@gmail.com",
+                                        "Design : Figma, Canva",
                                         textAlign: TextAlign.justify,
                                         style: GoogleFonts.notoSans(
                                             fontWeight: FontWeight.w300,
                                             fontSize: 15,
-                                            color: Colors.white),
+                                            color: Colors.black),
                                       ),
                                       const SizedBox(
-                                        height: 10,
+                                        height: 12,
                                       ),
                                       Text(
-                                        "From : Bandung, Telkom University",
+                                        "Soft Skill : Teamwork , Time Management, Critikal Thinking, Creative, Discipline",
                                         textAlign: TextAlign.justify,
                                         style: GoogleFonts.notoSans(
                                             fontWeight: FontWeight.w300,
                                             fontSize: 15,
-                                            color: Colors.white),
-                                      ),
-                                      const SizedBox(
-                                        height: 15,
+                                            color: Colors.black),
                                       ),
                                     ],
                                   ),

@@ -1,7 +1,5 @@
-import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_portofolio/animation/entrance_fader.dart';
 import 'package:flutter_portofolio/view/responsive_layout.dart';
@@ -48,7 +46,7 @@ Container _desktopBody({
   return Container(
       constraints: const BoxConstraints(maxHeight: 750, minHeight: 400),
       decoration: const BoxDecoration(
-        color: Color(0xffC3E5FF),
+        color: Colors.white,
       ),
       child: Stack(
         children: [
@@ -57,22 +55,11 @@ Container _desktopBody({
               alignment: Alignment.bottomCenter,
               child: Stack(
                 children: [
-                  Opacity(
-                    opacity: 0.5,
-                    child: ClipPath(
-                      clipper: WaveClipperOne(flip: true, reverse: true),
-                      child: Container(
-                        color: Colors.deepOrangeAccent,
-                        height: 200,
-                      ),
-                    ),
-                  ),
                   ClipPath(
-                    //upper clippath with less height
                     clipper: WaveClipperOne(flip: true, reverse: true),
                     child: Container(
                       padding: const EdgeInsets.only(bottom: 50),
-                      color: Colors.white,
+                      color: const Color(0xffC3E5FF),
                       height: 300,
                       alignment: Alignment.center,
                     ),
@@ -231,7 +218,7 @@ Container _tabletBody({
   return Container(
       constraints: const BoxConstraints(maxHeight: 750, minHeight: 400),
       decoration: const BoxDecoration(
-        color: Color(0xffC3E5FF),
+        color: Colors.white,
       ),
       child: Stack(
         children: [
@@ -240,18 +227,12 @@ Container _tabletBody({
               alignment: Alignment.bottomCenter,
               child: Stack(
                 children: [
-                  Opacity(
-                    opacity: 0.5,
-                    child: ClipPath(
-                      clipper: WaveClipperOne(flip: true, reverse: true),
-                    ),
-                  ),
                   ClipPath(
                     //upper clippath with less height
                     clipper: WaveClipperOne(flip: true, reverse: true),
                     child: Container(
                       padding: const EdgeInsets.only(bottom: 50),
-                      color: Colors.white,
+                      color: const Color(0xffC3E5FF),
                       height: 300,
                       alignment: Alignment.center,
                     ),

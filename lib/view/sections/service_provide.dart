@@ -8,7 +8,7 @@ class ToolsSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: const BoxDecoration(color: Color(0xff2d2f33)),
+      decoration: const BoxDecoration(color: Color(0xff00285d)),
       child: Padding(
         padding:
             const EdgeInsets.only(top: 50, bottom: 50, left: 30, right: 30),
@@ -26,7 +26,7 @@ class ToolsSection extends StatelessWidget {
             ),
             Center(
               child: Text(
-                "Service i can do that may be a help... maybe :)",
+                "Service i can do that may be a help",
                 style: GoogleFonts.poppins(
                     fontSize: 13,
                     color: Colors.white,

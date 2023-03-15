@@ -2,21 +2,21 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class CardPreview extends StatefulWidget {
-  const CardPreview({Key? key}) : super(key: key);
+class HistoryPreview extends StatefulWidget {
+  const HistoryPreview({Key? key}) : super(key: key);
 
   @override
-  State<CardPreview> createState() => _CardPreviewState();
+  State<HistoryPreview> createState() => _HistoryPreviewState();
 }
+
+String urlBanku = "https://github.com/ReyST81/Hi-Story_mobile";
 
 double? width;
 double? height;
 bool? animate;
 bool? cardText;
 
-String urlForum = "https://github.com/Capstone-15-Alta/Flutter-mobile";
-
-class _CardPreviewState extends State<CardPreview> {
+class _HistoryPreviewState extends State<HistoryPreview> {
   @override
   void initState() {
     animate = false;
@@ -62,11 +62,11 @@ class _CardPreviewState extends State<CardPreview> {
           children: [
             Align(
               child: Container(
-                  width: 500,
-                  height: 300,
+                  width: 400,
+                  height: 250,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
-                      color: const Color(0xff26B893),
+                      color: Colors.white,
                       boxShadow: [
                         BoxShadow(
                           color: Colors.black.withOpacity(0.5),
@@ -81,13 +81,13 @@ class _CardPreviewState extends State<CardPreview> {
                     style: GoogleFonts.poppins(
                         fontSize: 15,
                         fontWeight: FontWeight.bold,
-                        color: Colors.white),
+                        color: Colors.black),
                   ))),
             ),
             Align(
               child: GestureDetector(
                 onTap: () {
-                  _launchURL(urlForum);
+                  _launchURL(urlBanku);
                 },
                 child: SizedBox(
                   width: 400,
@@ -108,7 +108,7 @@ class _CardPreviewState extends State<CardPreview> {
                             )
                           ]),
                       child: Image.asset(
-                        "assets/image/forum_diskusi.png",
+                        "assets/image/history.png",
                         fit: BoxFit.fill,
                       ),
                     ),
@@ -123,8 +123,8 @@ class _CardPreviewState extends State<CardPreview> {
   }
 }
 
-Future<void> _launchURL(String urlForum) async {
-  if (!await launchUrl(Uri.parse(urlForum))) {
-    throw 'Could not launch $urlForum';
+Future<void> _launchURL(String urlBanku) async {
+  if (!await launchUrl(Uri.parse(urlBanku))) {
+    throw 'Could not launch $urlBanku';
   }
 }
