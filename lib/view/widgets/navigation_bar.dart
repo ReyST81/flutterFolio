@@ -23,50 +23,79 @@ class Navbar extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     color: Colors.black),
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: <Widget>[
-                  Text(
-                    "Home",
-                    style: GoogleFonts.poppins(
-                        fontSize: 15,
-                        fontWeight: FontWeight.w400,
-                        color: Colors.black),
-                  ),
-                  SizedBox(width: MediaQuery.of(context).size.width * 0.03),
-                  Text(
-                    "About",
-                    style: GoogleFonts.poppins(
-                        fontSize: 15,
-                        fontWeight: FontWeight.w400,
-                        color: Colors.black),
-                  ),
-                  SizedBox(width: MediaQuery.of(context).size.width * 0.03),
-                  Text(
-                    "Project",
-                    style: GoogleFonts.poppins(
-                        fontSize: 15,
-                        fontWeight: FontWeight.w400,
-                        color: Colors.black),
-                  ),
-                  SizedBox(width: MediaQuery.of(context).size.width * 0.03),
-                  Text(
-                    "Interest",
-                    style: GoogleFonts.poppins(
-                        fontSize: 15,
-                        fontWeight: FontWeight.w400,
-                        color: Colors.black),
-                  ),
-                  SizedBox(width: MediaQuery.of(context).size.width * 0.03),
-                  Text(
-                    "Contact",
-                    style: GoogleFonts.poppins(
-                        fontSize: 15,
-                        fontWeight: FontWeight.w400,
-                        color: Colors.black),
-                  ),
-                ],
-              ),
+              // Row(
+              //   mainAxisAlignment: MainAxisAlignment.end,
+              //   children: <Widget>[
+              //     TextButton(
+              //       onPressed: () {
+              //         Navigator.push(
+              //           context,
+              //           MaterialPageRoute(
+              //               builder: (context) => const TopSection()),
+              //         );
+              //       },
+              //       style: const ButtonStyle(),
+              //       child: Text(
+              //         "Home",
+              //         style: GoogleFonts.poppins(
+              //             fontSize: 15,
+              //             fontWeight: FontWeight.w400,
+              //             color: Colors.black),
+              //       ),
+              //     ),
+              //     SizedBox(width: MediaQuery.of(context).size.width * 0.03),
+              //     TextButton(
+              //       onPressed: () {
+              //         Navigator.push(
+              //           context,
+              //           MaterialPageRoute(
+              //               builder: (context) => const AboutMe()),
+              //         );
+              //       },
+              //       child: Text(
+              //         "About",
+              //         style: GoogleFonts.poppins(
+              //             fontSize: 15,
+              //             fontWeight: FontWeight.w400,
+              //             color: Colors.black),
+              //       ),
+              //     ),
+              //     SizedBox(width: MediaQuery.of(context).size.width * 0.03),
+              //     TextButton(
+              //       onPressed: () {
+              //         Navigator.push(
+              //           context,
+              //           MaterialPageRoute(
+              //               builder: (context) => ProjectSection()),
+              //         );
+              //       },
+              //       child: Text(
+              //         "Project",
+              //         style: GoogleFonts.poppins(
+              //             fontSize: 15,
+              //             fontWeight: FontWeight.w400,
+              //             color: Colors.black),
+              //       ),
+              //     ),
+              //     SizedBox(width: MediaQuery.of(context).size.width * 0.03),
+              //     TextButton(
+              //       onPressed: () {
+              //         Navigator.push(
+              //           context,
+              //           MaterialPageRoute(
+              //               builder: (context) => const ContactSection()),
+              //         );
+              //       },
+              //       child: Text(
+              //         "Contact",
+              //         style: GoogleFonts.poppins(
+              //             fontSize: 15,
+              //             fontWeight: FontWeight.w400,
+              //             color: Colors.black),
+              //       ),
+              //     )
+              //   ],
+              // ),
             ],
           )),
     );

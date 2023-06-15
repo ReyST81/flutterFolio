@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_portofolio/item/card_item.dart';
 
 class ToolsSection extends StatelessWidget {
-  ToolsSection({Key? key}) : super(key: key);
+  const ToolsSection({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

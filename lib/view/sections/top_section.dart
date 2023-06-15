@@ -18,12 +18,12 @@ class TopSection extends StatelessWidget {
       mobile: _mobileBody(widthBody: width, heightBody: height),
       tablet: _tabletBody(
           widthBody: width,
-          heightBody: height * 0.27,
+          heightBody: height,
           imageHeight: 200,
           imageWidth: 200),
       desktop: _desktopBody(
           widthBody: width,
-          heightBody: height * 0.27,
+          heightBody: height,
           imageHeight: 200,
           imageWidth: 200),
     );
@@ -44,7 +44,7 @@ Container _desktopBody({
   // required Uri launchGit
 }) {
   return Container(
-      constraints: const BoxConstraints(maxHeight: 750, minHeight: 400),
+      constraints: const BoxConstraints(maxHeight: 700, minHeight: 400),
       decoration: const BoxDecoration(
         color: Colors.white,
       ),
@@ -80,6 +80,12 @@ Container _desktopBody({
                       const BoxConstraints(maxWidth: 639, maxHeight: 860),
                   child: Image.asset("assets/image/profile_image.png"),
                 ),
+                // Expanded(
+                //   child: AspectRatio(
+                //     aspectRatio: 100 / 98,
+                //     child: Image.asset("assets/image/profile_image.png"),
+                //   ),
+                // ),
                 const SizedBox(
                   width: 60,
                 ),

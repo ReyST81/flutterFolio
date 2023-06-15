@@ -24,7 +24,7 @@ class _TabletPageState extends State<TabletPage> {
           key: gkey,
         ),
         const AboutMe(),
-        ToolsSection(),
+        const ToolsSection(),
         ProjectSection(),
         const ContactSection()
       ],
